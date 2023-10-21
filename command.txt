@@ -1,0 +1,7 @@
+rails new myapi-rails --api 
+
+rails active_storage:install   
+rails g scaffold post title  
+rails db:migrate     
+bundle add jsonapi-serializer 
+rails g serializer post id title
